@@ -49,6 +49,6 @@ public class ImageService {
         int verticalCount = Integer.parseInt(screenDimension[0]) / Integer.parseInt(imgDimension[0]);
         int horizontalCount = Integer.parseInt(screenDimension[1]) / Integer.parseInt(imgDimension[1]);
 
-        return verticalCount * horizontalCount; //no of  maximum images to fit in given screen
+        return verticalCount * horizontalCount; //no of  maximum images to fit in given screen dimension
     }
 }
