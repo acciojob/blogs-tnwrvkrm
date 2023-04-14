@@ -42,9 +42,9 @@ public class ImageService {
         Image image = imageRepository2.findById(id).get();
         String dimension = image.getDimensions();
 
-        String[] imgDimension = dimension.split("X");
+        String[] imgDimension = dimension.split("x");
 
-        String[] screenDimension = screenDimensions.split("X");
+        String[] screenDimension = screenDimensions.split("x");
 
         int verticalCount = Integer.parseInt(screenDimension[0]) / Integer.parseInt(imgDimension[0]);
         int horizontalCount = Integer.parseInt(screenDimension[1]) / Integer.parseInt(imgDimension[1]);
